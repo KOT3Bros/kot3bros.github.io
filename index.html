@@ -4,8 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHANN</title>
+  <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
+<body id="wrapper">
+  <section class="main">
+    <header class="header">
+      <img src="img/logo.png" alt="Company logo" draggable="false">
+
+      <div class="header_right">
+        <span>
+          8 800 555 80 80
+        </span>
+
+        <button class="btn btn_header">
+          Заказать звонок
+        </button>
+      </div>
+    </header>
+
+    <h1 class="main__title">
+      электромобильный вилочный погрузчик
+      <span>
+        нового поколения SHANN
+      </span>
+
+      <img src="img/main-section.png" alt="Vehicle image" draggable="false">
+    </h1>
+
+    <p class="main__subtitle">
+      Оставьте заявку и получите консультацию специалиста
+    </p>
+
+    <div class="main__buttons">
+      <button class="btn btn_primary">
+        Получить предложение
+      </button>
+
+      <button class="btn btn_dashed">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_47_97)">
+            <path
+              d="M4.34417 8.34042C5.72417 11.0525 7.9475 13.2662 10.6596 14.6558L12.7679 12.5475C13.0267 12.2887 13.41 12.2025 13.7454 12.3175C14.8188 12.6721 15.9783 12.8637 17.1667 12.8637C17.6938 12.8637 18.125 13.295 18.125 13.8221V17.1667C18.125 17.6938 17.6938 18.125 17.1667 18.125C8.16792 18.125 0.875 10.8321 0.875 1.83333C0.875 1.30625 1.30625 0.875 1.83333 0.875H5.1875C5.71458 0.875 6.14583 1.30625 6.14583 1.83333C6.14583 3.03125 6.3375 4.18125 6.69208 5.25458C6.7975 5.59 6.72083 5.96375 6.4525 6.23208L4.34417 8.34042Z"
+              fill="#009BFF" />
+          </g>
+          <defs>
+            <clipPath id="clip0_47_97">
+              <rect width="19" height="19" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        Перезвоним в течении дня для консультации
+      </button>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <article class="advantage technologies">
+      <div>
+        <p class="technologies__title">
+          эволюционные
+          <span>
+            технологии
+          </span>
+        </p>
+        <p class="technologies__subtitle">
+          Технологии электромобиля в вилочном погрузчике
+        </p>
+      </div>
+      <div class="advantages__images">
+        <div class="advantages__circle advantages__circle_1">
+          <div class="advantages__circle advantages__circle_inner"></div>
+          <span class="tooltip tooltip_left-1">
+            Степень защиты IP65
+          </span>
+        </div>
+        <div class="advantages__circle advantages__circle_2">
+          <div class="advantages__circle advantages__circle_inner"></div>
+          <span class="tooltip tooltip_left-2">
+            Температура рабочей<br>среды -40 до +40
+          </span>
+        </div>
+
+        <img class="advantages__image-left" src="img/technologies-left.png" alt="">
+        <img class="advantages__image-left_1" src="img/technologies-left-1.png" alt="">
+        <img class="advantages__image-left_2" src="img/technologies-left-2.png" alt="">
+
+        <div class="advantages__circle advantages__circle_3">
+          <div class="advantages__circle advantages__circle_inner"></div>
+          <span class="tooltip tooltip_right-1">
+            Корпус изготовлен из<br>высокопрочной стали
+          </span>
+        </div>
+        <div class="advantages__circle advantages__circle_4">
+          <div class="advantages__circle advantages__circle_inner"></div>
+          <span class="tooltip tooltip_right-2">
+            Уникальная система рекуперации<br>энергии торможения и энергии инерции
+          </span>
+        </div>
+
+        <img class="advantages__image-right" src="img/technologies-right.png" alt="">
+        <img class="advantages__image-right_1" src="img/technologies-right-1.png" alt="">
+        <img class="advantages__image-right_2" src="img/technologies-right-2.png" alt="">
+      </div>
+    </article>
+
+
+    <article class="advantage engine">
+      <p class="engine__title">
+        двигатель
+        <span>
+          и АКБ
+        </span>
+      </p>
+
+      <ul>
+        <li>1,5 часа составляет время зарядки</li>
+        <li>Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия затрат на электроэнергию)</li>
+        <li>Интеллектуальный контроль температуры</li>
+        <li>Синхронный двигатель с постоянными магнитами</li>
+        <li>Несколько режимов работы: ECO, STANDARD, POWER</li>
+      </ul>
+
+      <img src="img/engine.png" alt="Engine image">
+      <div class="engine__circle"></div>
+    </article>
+  </section>
+
+  <dialog id="modal" class="modal">
+    <button id="close-modal" class="modal__close-btn">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.45">
+          <path d="M19 1L1 19" stroke="#2B2E3E" stroke-width="2" />
+          <path d="M19 19L1 1" stroke="#2B2E3E" stroke-width="2" />
+        </g>
+      </svg>
+    </button>
+    <form class="form">
+      <p class="form__title">Оставить заявку на консультацию</p>
+      <p class="form__text">Оставьте заявку – и наш менеджер свяжется с вами, узнает ваши потребности и предложит идеальный погрузчик под ваши задачи.</p>
+
+      <div class="form__inputs">
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
+        <textarea class="form__textarea" rows="7" placeholder="Пожелания по комплектации погрузчика"></textarea>
+      </div>
+
+      <div class="form__btn">
+        <button id="send-form" class="btn">
+          Отправить
+        </button>
+        <p class="form__privacy-policy">
+          Нажимая кнопку «Отправить», вы соглашаетесь с
+          <a href="#" class="form__privacy-policy">
+            Политикой конфиденциальности
+          </a>
+        </p>
+      </div>
+    </form>
+  </dialog>
+
+  <script>
+    const wrapper = document.getElementById('wrapper')
+    function scaleContent() {
+      if (window.innerWidth >= 1920) {
+        wrapper.style.setProperty('zoom', '1')
+      } else {
+        wrapper.style.setProperty('zoom', `${window.innerWidth / 1920}`)
+      }
+    }
+    addEventListener('resize', scaleContent)
+    addEventListener('load', scaleContent)
+  </script>
+
+  <script>
+    const buttons = document.querySelectorAll('.btn')
+    const closeModalBtn = document.getElementById('close-modal')
+    const modal = document.getElementById('modal')
+
+    closeModalBtn.addEventListener('click', () => modal.close())
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modal.showModal()
+      })
+    });
+  </script>
 </body>
 </html>

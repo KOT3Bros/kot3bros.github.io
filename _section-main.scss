@@ -1,0 +1,34 @@
+.main {
+  padding: 0 calc(50% - 720px);
+  user-select: none;
+
+  &__title {
+    position: relative;
+    width: 820px;
+    margin-bottom: 30px;
+    font: $text-title;
+    letter-spacing: -2%;
+    color: $text-dark;
+
+    & span {
+      color: $color-blue;
+    }
+
+    & img {
+      position: absolute;
+      top: -50px;
+      left: 475px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 70px;
+    font: $text-subtitle;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 255px;
+  }
+}

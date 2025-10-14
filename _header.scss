@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  padding: 10px 10px 10px 25px;
+  margin-bottom: 170px;
+  border-radius: 15px;
+  background-color: $color-white;
+  box-sizing: border-box;
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    & span {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+
+  & img {
+    object-fit: contain;
+  }
+}

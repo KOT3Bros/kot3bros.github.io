@@ -1,0 +1,38 @@
+.btn {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $color-white;
+  background-color: $color-blue;
+
+  &_header {
+    padding: 12.5px 40px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &_primary {
+    padding: 15px 40px;
+  }
+
+  &_dashed {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 0;
+    font-weight: 400;
+    color: $text-dark;
+    background-color: $button-dashed-bg;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none'   rx='5' ry='5' stroke='%23BFC9E0' stroke-width='1' stroke-dasharray='9%2c 7' stroke-dashoffset='7' stroke-linecap='square'/%3e%3c/svg%3e");
+  }
+
+  &:hover {
+    color: $color-blue;
+    background-color: $color-blue-hover;
+  }
+}
