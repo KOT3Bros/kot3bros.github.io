@@ -90,3 +90,70 @@
     color: $text-dark-45;
   }
 }
+
+@media (max-width: 767px) {
+  .modal {
+    border-radius: 15px;
+    padding: 25px 20px 20px 20px;
+    width: auto;
+    margin: auto 15px;
+
+    &__close-btn {
+      top: 12px;
+      right: 12px;
+
+      & svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .form {
+    text-align: center;
+    width: 100%;
+
+    &__title {
+      width: 100%;
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 25px;
+    }
+
+    &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    & input, textarea {
+      padding: 17.5px 20px;
+      font-size: 14px;
+    }
+
+    & textarea {
+      height: 120px;
+      box-sizing: border-box;
+    }
+
+    &__btn {
+      flex-direction: column;
+      gap: 15px;
+
+      & button {
+        width: 310px;
+      }
+    }
+
+    &__privacy-policy {
+      width: 100%;
+    }
+  }
+}

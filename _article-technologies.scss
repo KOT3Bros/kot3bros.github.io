@@ -17,4 +17,170 @@
     font: $text-subtitle;
     text-align: center;
   }
+
+  &__images {
+    position: relative;
+    display: flex;
+    gap: 100px;
+  }
+
+  &__image-left {
+    &_1 {
+      display: none;
+      position: absolute;
+    }
+
+    &_2 {
+      display: none;
+      position: absolute;
+    }
+  }
+
+  &__image-right {
+    &_1 {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &_2 {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 100%;
+    background-color: $color-blue;
+    z-index: 1;
+    box-sizing: border-box;
+
+    &:hover .tooltip {
+      visibility: visible;
+      opacity: 100%;
+      transition: 0.3s;
+    }
+
+    &_1 {
+      top: 80px;
+      left: 28px;
+
+      &:hover ~ .technologies__image-left {
+        opacity: 44%;
+        transition: 0.3s;
+      }
+
+      &:hover ~ .technologies__image-left_1 {
+        display: block;
+      }
+    }
+
+    &_2 {
+      bottom: 103px;
+      left: 124px;
+
+      &:hover ~ .technologies__image-left {
+        opacity: 44%;
+        transition: 0.3s;
+      }
+
+      &:hover ~ .technologies__image-left_2 {
+        display: block;
+      }
+    }
+
+    &_3 {
+      top: 8px;
+      right: 61px;
+
+      &:hover ~ .technologies__image-right {
+        opacity: 44%;
+        transition: 0.3s;
+      }
+
+      &:hover ~ .technologies__image-right_1 {
+        display: block;
+      }
+    }
+
+    &_4 {
+      bottom: 30px;
+      right: 196px;
+
+      &:hover ~ .technologies__image-right {
+        opacity: 44%;
+        transition: 0.3s;
+      }
+
+      &:hover ~ .technologies__image-right_2 {
+        display: block;
+      }
+    }
+
+    &_inner {
+      width: 10px;
+      height: 10px;
+      background-color: $color-white;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .technologies {
+    padding: 50px 0;
+    gap: 40px;
+
+    &__text {
+      width: 210px;
+    }
+
+    &__title {
+      font: $text-title-mobile;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      font: $text-subtitle-mobile;
+    }
+
+    &__images {
+      flex-direction: column;
+      gap: 45px;
+    }
+
+    &__image-right {
+      &_1 {
+        display: none;
+        position: absolute;
+        top: unset;
+        bottom: 189px;
+        right: 0;
+      }
+    }
+
+    &__circle {
+      &_2 {
+        top: 317px;
+        left: 124px;
+      }
+
+      &_3 {
+        top: unset;
+        bottom: 412px;
+        right: 61px;
+      }
+    }
+  }
 }

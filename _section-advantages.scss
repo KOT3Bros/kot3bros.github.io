@@ -3,122 +3,6 @@
   flex-direction: column;
   gap: 20px;
   margin-bottom: 140px;
-
-  &__images {
-    position: relative;
-    display: flex;
-    gap: 100px;
-  }
-
-  &__image-left {
-    &_1 {
-      display: none;
-      position: absolute;
-    }
-
-    &_2 {
-      display: none;
-      position: absolute;
-    }
-  }
-
-  &__image-right {
-    &_1 {
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    &_2 {
-      display: none;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
-
-  &__circle {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 100%;
-    background-color: $color-blue;
-    z-index: 1;
-    box-sizing: border-box;
-
-    &:hover .tooltip {
-      opacity: 100%;
-      transition: 0.3s;
-    }
-
-    &_1 {
-      top: 80px;
-      left: 28px;
-
-      &:hover ~ .advantages__image-left {
-        opacity: 44%;
-        transition: 0.3s;
-      }
-
-      &:hover ~ .advantages__image-left_1 {
-        display: block;
-      }
-    }
-
-    &_2 {
-      bottom: 103px;
-      left: 124px;
-
-      &:hover ~ .advantages__image-left {
-        opacity: 44%;
-        transition: 0.3s;
-      }
-
-      &:hover ~ .advantages__image-left_2 {
-        display: block;
-      }
-    }
-
-    &_3 {
-      top: 8px;
-      right: 61px;
-
-      &:hover ~ .advantages__image-right {
-        opacity: 44%;
-        transition: 0.3s;
-      }
-
-      &:hover ~ .advantages__image-right_1 {
-        display: block;
-      }
-    }
-
-    &_4 {
-      bottom: 30px;
-      right: 196px;
-
-      &:hover ~ .advantages__image-right {
-        opacity: 44%;
-        transition: 0.3s;
-      }
-
-      &:hover ~ .advantages__image-right_2 {
-        display: block;
-      }
-    }
-
-    &_inner {
-      width: 10px;
-      height: 10px;
-      background-color: $color-white;
-    }
-  }
 }
 
 .advantage {
@@ -129,8 +13,21 @@
   position: sticky;
   top: 20px;
   width: 1840px;
-  height: 910px;
+  min-height: 910px;
   border-radius: 60px;
   padding: 0px 200px;
   box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    gap: 15px;
+    margin-bottom: 80px;
+  }
+
+  .advantage {
+    position: relative;
+    width: 370px;
+    min-height: 705px;
+  }
 }

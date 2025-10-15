@@ -1,10 +1,19 @@
 .main {
-  padding: 0 calc(50% - 720px);
+  padding: 0 200px;
   user-select: none;
 
-  &__title {
+  &__content {
     position: relative;
     width: 820px;
+
+    & img {
+      position: absolute;
+      top: -50px;
+      left: 475px;
+    }
+  }
+
+  &__title {
     margin-bottom: 30px;
     font: $text-title;
     letter-spacing: -2%;
@@ -12,12 +21,6 @@
 
     & span {
       color: $color-blue;
-    }
-
-    & img {
-      position: absolute;
-      top: -50px;
-      left: 475px;
     }
   }
 
@@ -30,5 +33,42 @@
     display: flex;
     gap: 15px;
     margin-bottom: 255px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 0 10px;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 350px;
+      overflow: hidden;
+
+      & img {
+        height: 245px;
+        align-self: end;
+        object-fit: cover;
+        position: unset;
+      }
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      font: $text-title-mobile;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+      font: $text-subtitle-mobile;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 80px;
+    }
   }
 }

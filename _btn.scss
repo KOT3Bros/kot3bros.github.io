@@ -12,7 +12,10 @@
   &_header {
     padding: 12.5px 40px;
     font-size: 14px;
-    font-weight: 700;
+
+    & svg {
+      display: none;
+    }
   }
 
   &_primary {
@@ -22,6 +25,7 @@
   &_dashed {
     padding: 15px 25px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     z-index: 0;
@@ -34,5 +38,36 @@
   &:hover {
     color: $color-blue;
     background-color: $color-blue-hover;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 17.5px 0px;
+
+    &_header {
+      line-height: 0;
+      padding: 11px;
+      background-color: $color-blue-hover;
+
+      & svg {
+        display: block;
+      }
+
+      & p {
+        display: none;
+      }
+    }
+
+    &_dashed {
+      gap: 8px;
+
+      & svg {
+        width: 17px;
+        height: 17px;
+      }
+    }
   }
 }
